@@ -29,6 +29,11 @@ function App() {
 
   return (
     <div className="app-container">
+      <div className={`fixed-header ${isBlackSection ? 'dark' : 'light'}`}>
+        <h1 className="main-title">Smooth Transition Effect from a white section to black section using HTML, CSS and React</h1>
+        <h2 className="author">By Ananya Bajpai</h2>
+      </div>
+      
       <section className={`section white-section ${isBlackSection ? 'fade-out' : 'fade-in'}`}>
         <div className="content">
           <h1>Welcome to the Light</h1>

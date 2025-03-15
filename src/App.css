@@ -11,6 +11,40 @@
   overflow-x: hidden;
 }
 
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  z-index: 10;
+  transition: all 1s ease-in-out;
+}
+
+.fixed-header.light {
+  color: #000000;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.fixed-header.dark {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.main-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  transition: color 1s ease-in-out;
+}
+
+.author {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  transition: color 1s ease-in-out;
+}
+
 .section {
   position: fixed;
   top: 0;
@@ -26,6 +60,7 @@
 .content {
   text-align: center;
   padding: 2rem;
+  margin-top: 8rem;
 }
 
 .white-section {
@@ -48,13 +83,13 @@
   opacity: 0;
 }
 
-h1 {
+.content h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
   font-weight: bold;
 }
 
-p {
+.content p {
   font-size: 1.5rem;
   opacity: 0.8;
 }
